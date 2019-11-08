@@ -1,4 +1,4 @@
-
+![](https://github.com/ramon-mendes/lib_growl.tis/blob/master/demo.gif?raw=true)
 
 ## Usage
 
