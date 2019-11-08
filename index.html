@@ -1,0 +1,31 @@
+﻿<!-- OmniView:on -->
+<html>
+<head>
+	<script type="text/tiscript">
+		include "lib_growl.tis";
+
+		Growl("Hello World from growl.tis library!");
+		Growl("A #error message", #error);
+		Growl("A #success message", #success);
+		var el_growl = Growl("Click the button to remove-me", #info, false);
+
+		$(button).onClick = function() {
+			el_growl.fadeout();
+		};
+	</script>
+
+	<style>
+		@import url(lib_growl.css);
+
+		body
+		{
+			margin: 0;
+			background: #272C30;
+		}
+	</style>
+</head>
+
+<body>
+	<button>Click to remove message.</button>
+</body>
+</html>
